@@ -21,7 +21,6 @@
     /* box-shadow */
     --bs:0.25em 0.25em 0.75em rgba(0,0,0,0.25), 0.125em 0.125em 0.125em rgba(0, 0, 0, 0.15);
 
-    --bs-two: 0.25em 0.25em 0.75em rgba(0,0,0,0.1), 0.125em 0.125em 0.125em rgba(0, 0, 0, 0.);
 }
 
 ul li {
@@ -41,7 +40,7 @@ body {
 .wrapper {
     padding: 25px;
     margin: 0 auto;
-    max-width: 114rem;
+    
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -130,6 +129,13 @@ body {
     font-size: 16px;
     background: var(--bright-yellow);
     box-shadow: var(--bs);
+    cursor: pointer;
+    opacity: .8;
+    transition: opacity 0.5s ease-in;
+}
+
+.box-one .btn:hover {
+    opacity: 1;
 }
 
 .lower-box--cyan .box-two {
@@ -145,33 +151,18 @@ body {
 }
 
 
-.box-two__reasons > li + li {
-    margin-top: 4px;
+.box-two__reasons  {
+    line-height: 1.2;
 }
 
 @media (min-width:540px){
-    .wrapper {
-        
-    }
     .container-box {
         max-width: 90%;
         margin: auto;
     }
 
-    .upper-box--white {
-        text-align: center;
-    }
-
-    .lower-box--cyan {
-        text-align: center;
-    }
-
-    .box-one .price__section {
-        justify-content: center;
-    }
-
     .box-one .btn {
-        min-width: 70%;
+        min-width: inherit;
     }
 }
 
@@ -251,7 +242,6 @@ body {
         font-size: 13px;
     }
 }
-
 
 
 
