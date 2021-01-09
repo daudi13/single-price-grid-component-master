@@ -43,6 +43,9 @@ body {
     margin: 0 auto;
     max-width: 114rem;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrapper .container-box {
@@ -148,9 +151,7 @@ body {
 
 @media (min-width:540px){
     .wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        
     }
     .container-box {
         max-width: 90%;
